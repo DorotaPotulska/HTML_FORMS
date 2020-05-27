@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="results.html" metod="GET">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" value ="Dorota">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id ="password" placeholder="Make is strong ..">
+        </div>
+        <div>
+            <label for="age">age</label>
+            <input type="number" name="age" id ="age" min="20" max="100" step="2">
+        </div>
+        <div>
+            <label for="date">Date:</label>
+            <input name="date" type="date" min="2020-05-30">
+        </div>
+        <div>
+            <label for="pizza">Pizza</label>
+            <input type="checkbox" name="pizza" id="pizza" value="pizza">
+            <label for="pasta">Pasta</label>
+            <input type="checkbox" name="pasta" id="pasta" value="Pasta">
+            
+        </div>
+        <div>
+            Gender
+            <div>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value="male" checked>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="female">
+    
+            </div>
+        </div>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
