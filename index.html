@@ -6,14 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="results.html" metod="GET">
+    <form action="results.html" metod="GET" enctype="multipart/form-data">
         <div>
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" value ="Dorota">
+            <label for="name" >Name</label>
+            <input type="text" name="name" id="name" value ="Dorota" minlength="3">
         </div>
         <div>
             <label for="password">Password</label>
-            <input type="password" name="password" id ="password" placeholder="Make is strong ..">
+            <input type="password" name="password" id ="password" placeholder="Make is strong .."required>
         </div>
         <div>
             <label for="age">age</label>
@@ -40,6 +40,53 @@
     
             </div>
         </div>
+        <div>
+            <label for="eyeColor">Eye Color</label>
+            <select name="eyeColor" id="eyeColor" multiple>
+                <option>Green</option>
+                <option label="Red" value="Red"></option>
+                <option label="Blue" value="Blue"></option>
+
+            </select>
+        </div>
+
+        <div>
+            <label for="eyeColor">Eye Color</label>
+            <select name="eyeColor" id="eyeColor">
+                <option>Green</option>
+                <option label="Red" value="Red"></option>
+                <option label="Blue" value="Blue"></option>
+
+            </select>
+        </div>
+
+        <div>
+            <label for="bio">Biografia</label>
+            <textarea id="bio" cols="30" rows="10">Podstawowy tekst</textarea>
+        </div>
+
+        <div>
+            <label for="file">File</label>
+            <input type="file" id="file">
+        </div>
+
+        
+    <div>
+        <label for="phone">Phone</label>
+        <input type="tel" pattern="[0-9]{9}" name="phone" id="phone">
+      </div>
+      <div>
+        <label for="url">URL</label>
+        <input type="url" name="url" id="url">
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+      </div>
+      <div>
+        <label for="color">Color</label>
+        <input type="color" name="color" id="color" required>
+      </div>
         <button type="submit">Submit</button>
         <button type="reset">Reset</button>
     </form>
